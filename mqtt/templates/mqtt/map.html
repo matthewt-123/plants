@@ -1,0 +1,20 @@
+{% extends 'mqtt/index.html' %}
+{% load static %}
+{% block title %}
+SMV Map
+{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+<style>
+    #map { height: 1000px; }
+</style>
+{% endblock %}
+
+{% block body %}
+<div id="map"></div>
+{% endblock %}
+
+{% block js %}
+<script src="{% static 'mqtt/team_dash.js' %}"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" defer></script>
+{% endblock %}

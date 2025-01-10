@@ -1,0 +1,12 @@
+
+* {
+    margin: 0px;
+}
+html {
+    background-color: #ffffff;
+    color: var(--color);
+
+    font-family: 'Comic Sans';
+    font-weight: normal;
+    font-size: 125%;
+}
