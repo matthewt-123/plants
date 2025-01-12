@@ -13,7 +13,11 @@ from django.urls import reverse
 def index(request):
     return render(request, 'mqtt/dashboard.html')
 
-
+def myurl(request):
+    return render(request, 'mqtt/myurl.html', {
+        "name": "matthew",
+        "day": "today"
+    })
 
 def login_view(request):
     if request.method == "POST":
